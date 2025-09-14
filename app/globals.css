@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fceee3;
+  --foreground: #2c2c2c;
+  --card : #fefef1;
+}
+
+html.dark{
+  --background: #415a77;
+  --foreground: #e0e1dd;
+  --card : #0d1b2a;
+
+  /* --background: #669bbc;
+  --foreground: #fdf0d5;
+  --card : #003049; */
+}
+
+@theme inline{
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-h : var(--font-primary);
+  --font-p : var(--font-secondary);
+  --color-card : var(--card);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.my-bg-pattern{
+opacity: 1;
+background-image: radial-gradient(circle at center center, #f0efed), repeating-radial-gradient(circle at center center, #f0efed, #f0efed, 10px, transparent 30px, transparent 10px);
+background-blend-mode: multiply;
+}
+
+
