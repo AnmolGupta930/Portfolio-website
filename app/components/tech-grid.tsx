@@ -49,7 +49,7 @@ export const AppIcon = ({
       //@ts-expect-error idk the type of getBoundingClientRect()
       const rect = ref.current.getBoundingClientRect();
       const parentRect =
-        //@ts-expect-error
+        //@ts-expect-error idk the type of getBoundingClientRect()
         ref.current.parentElement.parentElement.getBoundingClientRect();
       setElementCenter({
         x: rect.left - parentRect.left + rect.width / 2,
