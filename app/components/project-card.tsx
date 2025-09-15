@@ -23,7 +23,7 @@ export default function ProjectCard({
       <div
         key={title}
         className={cn(
-          "bg-card/70 text-foreground flex flex-col gap-3 rounded-2xl p-3",
+          "bg-card/90 text-foreground flex flex-col gap-3 rounded-2xl p-3",
           "shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(27,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]",
         )}
       >
