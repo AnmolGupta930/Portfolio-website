@@ -46,7 +46,7 @@ export const AppIcon = ({
   // This effect runs once to calculate the icon's center position
   useEffect(() => {
     if (ref.current) {
-      //@ts-expect-error
+      //@ts-expect-error idk the type of getBoundingClientRect()
       const rect = ref.current.getBoundingClientRect();
       const parentRect =
         //@ts-expect-error
@@ -61,9 +61,9 @@ export const AppIcon = ({
   // Transform hook to calculate distance and scale
   const scale = useTransform([gridX, gridY], ([latestX, latestY]) => {
     const containerCenter = CONTAINER_SIZE / 2;
-    //@ts-expect-error
+    //@ts-expect-error latestX is number
     const iconCurrentX = elementCenter.x + latestX;
-    //@ts-expect-error
+    //@ts-expect-error latestX is number
     const iconCurrentY = elementCenter.y + latestY;
 
     const distance = Math.sqrt(

@@ -5,11 +5,11 @@ export const CurrentDateTime = () => {
   const [currentDateTime, setCurrentDateTime] = useState(null);
 
   useEffect(() => {
-    //@ts-expect-error
+    //@ts-expect-error idk the type of date 
     setCurrentDateTime(new Date());
 
     const timerId = setInterval(() => {
-      //@ts-expect-error
+      //@ts-expect-error idk the type of date 
       setCurrentDateTime(new Date());
     }, 1000);
 
@@ -48,7 +48,7 @@ export const CurrentDateTime = () => {
   return (
     <time
       className="font-p text-foreground/90 text-[12px] tracking-tight"
-      // @ts-expect-error
+      // @ts-expect-error idk the type of date 
       dateTime={currentDateTime.toISOString()}
     >
       {formatDateTime(currentDateTime)}
