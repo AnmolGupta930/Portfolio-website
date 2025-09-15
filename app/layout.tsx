@@ -15,9 +15,8 @@ const secondary = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Anmol Gupta | Design Engineer",
-  description:
-    "Design Engineer specializing in Frontend Development and UI/UX Design. I craft pixel-perfect, high-performance websites and applications.",
+  title: "Anmol. | Design Engineer",
+  description: "Frontend with foresight—designing today for tomorrow's web.",
   keywords: [
     "Frontend Developer",
     "React",
@@ -33,14 +32,13 @@ export const metadata: Metadata = {
   },
   themeColor: "#ffffff",
   openGraph: {
-    title: "Anmol Gupta | Design Engineer",
-    description:
-      "Design Engineer specializing in Frontend Development and UI/UX Design. I craft pixel-perfect, high-performance websites and applications.",
-    url: "/",
+    title: "Anmol. | Design Engineer",
+    description: "Frontend with foresight—designing today for tomorrow's web.",
+    url: "https://portfolio-website-anmol-gupta.vercel.app/",
     siteName: "Anmol Gupta Portfolio",
     images: [
       {
-        url: "/", //image
+        url: "https://portfolio-website-anmol-gupta.vercel.app/og-img.png", //image
         width: 1200,
         height: 630,
         alt: "Anmol Gupta Portfolio",
@@ -52,13 +50,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@anmol__003",
-    title: "Anmol Gupta | Design Engineer",
-    description:
-      "Design Engineer specializing in Frontend Development and UI/UX Design. I craft pixel-perfect, high-performance websites and applications.",
+    title: "Anmol. | Design Engineer",
+    description: "Frontend with foresight—designing today for tomorrow's web.",
     creator: "@anmol__003",
-    images: [
-      "https://drive.google.com/uc?export=view&id=1g21AkBrsxt0w96JgFpBBnzCly8heAnxK",
-    ], //image
+    images: ["https://portfolio-website-anmol-gupta.vercel.app/og-img.png"], //image
   },
   icons: {
     icon: "/favicon.ico",
