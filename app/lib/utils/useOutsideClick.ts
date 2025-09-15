@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-//@ts-ignore
+//@ts-expect-error
 export default function useOutsideClick(ref, callback) {
   useEffect(() => {
-    //@ts-ignore
+    //@ts-expect-error
     const handelClickOutside = (e) => {
       if (ref.current && !ref.current.contains(e.target)) {
         callback();

@@ -21,7 +21,7 @@ export default function Gallery() {
   ];
   //---------------------------------------------------------------------
 
-  let ObjectID = apiArr[Math.floor(Math.random() * apiArr.length)];
+  const ObjectID = apiArr[Math.floor(Math.random() * apiArr.length)];
   const [artwork, setArtwork] = useState<Artwork | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<boolean>(false);
@@ -46,17 +46,21 @@ export default function Gallery() {
     })();
   }, []);
 
+  if (error) {
+    console.log("something went wront with MET API key");
+  }
+
   if (isLoading) {
     return (
       <>
         <Card title="gallery">
           <div className="flex justify-center">
-            <Image
+            <img
               src={"/loader.gif"}
               alt="loader"
               width={150}
               height={150}
-            ></Image>
+            ></img>
           </div>
         </Card>
       </>
@@ -68,7 +72,7 @@ export default function Gallery() {
       <Card title="gallery">
         <div className="group bg- relative flex flex-col justify-end overflow-hidden shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(27,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]">
           <Image
-            // @ts-ignore
+            // @ts-expect-error
             src={artwork?.primaryImageSmall}
             draggable={false}
             width={267}
@@ -77,7 +81,7 @@ export default function Gallery() {
             className="mx-auto bg-[linear-gradient(0deg,transparent_24%,#003049_25%,#003049_26%,transparent_27%,transparent_24%,#003049_25%,#003049_26%,transparent_27%,transparent),linear-gradient(90deg,transparent_24%,#003049_25%,#003049_26%,transparent_27%,transparent_24%,#003049_25%,#003049_26%,transparent_27%,transparent)] [background-size:_20px_20px] max-sm:rounded-2xl"
           ></Image>
           <div className="absolute inset-0 m-2 flex flex-row-reverse text-neutral-500">
-            {/* @ts-ignore */}
+            {/* @ts-expect-error */}
             <Link href={artwork?.objectURL} target="blank">
               <IconExternalLink />
             </Link>

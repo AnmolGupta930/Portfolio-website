@@ -25,6 +25,7 @@ const project1 = [
 
 const cards = [
   <ProjectCard
+    key={1}
     link="https://drive.google.com/drive/folders/1YFX1lPDCMuO12mcew-LTmuc9NB-msK_2?usp=sharing"
     imglink="https://drive.google.com/uc?export=view&id=1COMg1UTMNUp33X9GsLJVREyRVGX3luB2"
     title="EDA Club Name plate"
@@ -32,6 +33,7 @@ const cards = [
     techs={<Tech technologies={project1} />}
   />,
   <ProjectCard
+    key={2}
     link="https://drive.google.com/drive/folders/1YFX1lPDCMuO12mcew-LTmuc9NB-msK_2?usp=sharing"
     imglink="https://drive.google.com/uc?export=view&id=1rZx8f7W-nmCMIwoqj7k2fiUzZ_cKhos6"
     title="IEEE CEDA BANNER"
@@ -39,6 +41,7 @@ const cards = [
     techs={<Tech technologies={project1} />}
   />,
   <ProjectCard
+    key={3}
     link="https://drive.google.com/drive/folders/1YFX1lPDCMuO12mcew-LTmuc9NB-msK_2?usp=sharing"
     imglink="https://drive.google.com/uc?export=view&id=1YY2QNoK96kCSPgMEjjmJbU0jbFhGTYcW"
     title="EDA Standee design"
@@ -46,6 +49,7 @@ const cards = [
     techs={<Tech technologies={project1} />}
   />,
   <ProjectCard
+    key={4}
     link="https://drive.google.com/drive/folders/1YFX1lPDCMuO12mcew-LTmuc9NB-msK_2?usp=sharing"
     imglink="https://drive.google.com/uc?export=view&id=1Jont1pRNJGDNulbB48Mna9I56O4cu4e5"
     title="EDA Logo"
@@ -53,6 +57,7 @@ const cards = [
     techs={<Tech technologies={project1} />}
   />,
   <ProjectCard
+    key={5}
     link="https://drive.google.com/drive/folders/1YFX1lPDCMuO12mcew-LTmuc9NB-msK_2?usp=sharing"
     imglink="https://drive.google.com/uc?export=view&id=1T6RqazH8pkqXRJVXqHtZAzbo7oY_Pwzg"
     title="Monopoly IRL Poster"

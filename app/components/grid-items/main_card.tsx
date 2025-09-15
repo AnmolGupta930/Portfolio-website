@@ -54,19 +54,19 @@ export default function MainCard() {
               <TypewriterEffect words={wordsToAnimate}></TypewriterEffect>
             </h2>
             <p className="font-p text-foreground text-sm tracking-tight">
-              Greetings, I'm a 23-year-old front-end developer currently based
-              in Bangalore, India.
+              Greetings, I&apos;m a 23-year-old front-end developer currently
+              based in Bangalore, India.
             </p>
           </div>
           <div className="flex items-end justify-between gap-4 max-sm:flex max-sm:flex-col max-sm:items-start">
             <div className="w-full">
-              <p className="font-p text-foreground/90 text-[12px]  tracking-tight">
-                "I do front-end not because it's easy,
+              <p className="font-p text-foreground/90 text-[12px] tracking-tight">
+                &quot;I do front-end not because it&apos;s easy,
                 <br className="max-sm:hidden" /> but because I thought it would
-                be."
+                be.&quot;
               </p>
             </div>
-            <div className="flex w-full max-sm:mt-4 flex-col items-end">
+            <div className="flex w-full flex-col items-end max-sm:mt-4">
               <p className="font-p text-foreground flex items-center text-sm tracking-tight">
                 <span>
                   <IconPointFilled className="size-4 text-green-400" />

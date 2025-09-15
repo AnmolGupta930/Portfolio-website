@@ -18,7 +18,7 @@ export default function LinkBtn({
         href={link}
         target="_blank"
         className={cn(
-          "relative flex size-full items-center justify-center rounded-xl  bg-[#aaa18e] dark:bg-[#3c3c3c]",
+          "relative flex size-full items-center justify-center rounded-xl bg-[#aaa18e] dark:bg-[#3c3c3c]",
           className,
         )}
       >

@@ -31,7 +31,6 @@ const ICON_MARGIN = 10;
 const GRID_ROWS = 5;
 const GRID_COLS = 5;
 
-//@ts-ignore
 export const AppIcon = ({
   children,
   gridX,
@@ -47,11 +46,10 @@ export const AppIcon = ({
   // This effect runs once to calculate the icon's center position
   useEffect(() => {
     if (ref.current) {
-      //@ts-ignore
+      //@ts-expect-error
       const rect = ref.current.getBoundingClientRect();
-      //@ts-ignore
       const parentRect =
-        //@ts-ignore
+        //@ts-expect-error
         ref.current.parentElement.parentElement.getBoundingClientRect();
       setElementCenter({
         x: rect.left - parentRect.left + rect.width / 2,
@@ -63,9 +61,9 @@ export const AppIcon = ({
   // Transform hook to calculate distance and scale
   const scale = useTransform([gridX, gridY], ([latestX, latestY]) => {
     const containerCenter = CONTAINER_SIZE / 2;
-    //@ts-ignore
+    //@ts-expect-error
     const iconCurrentX = elementCenter.x + latestX;
-    //@ts-ignore
+    //@ts-expect-error
     const iconCurrentY = elementCenter.y + latestY;
 
     const distance = Math.sqrt(
@@ -93,7 +91,7 @@ export const AppIcon = ({
   );
 };
 
-export function AppleWatchMenu({ icons = [] }) {
+export function AppleWatchMenu({ icons = [] }: { icons: ReactNode[] }) {
   const gridX = useMotionValue(0);
   const gridY = useMotionValue(0);
 

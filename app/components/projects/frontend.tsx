@@ -1,32 +1,33 @@
 import React from "react";
-import {
-  IconBrandReactNative,
-  IconBrandNextjs,
-  IconBrandTailwind,
-  IconBrandVue,
-} from "@tabler/icons-react";
+// import {
+//   IconBrandReactNative,
+//   IconBrandNextjs,
+//   IconBrandTailwind,
+//   IconBrandVue,
+// } from "@tabler/icons-react";
 import ProjectCard from "../project-card";
 import ProjectSlider from "../project-slider";
-import Tech from "../tech";
 
-const project1 = [
-  {
-    title: "React",
-    logo: <IconBrandReactNative className="size-5" />,
-  },
-  {
-    title: "Next.js",
-    logo: <IconBrandNextjs className="size-5" />,
-  },
-  {
-    title: "Tailwind CSS",
-    logo: <IconBrandTailwind className="size-5" />,
-  },
-  {
-    title: "Vue",
-    logo: <IconBrandVue className="size-5" />,
-  },
-];
+// import Tech from "../tech";
+
+// const project1 = [
+//   {
+//     title: "React",
+//     logo: <IconBrandReactNative className="size-5" />,
+//   },
+//   {
+//     title: "Next.js",
+//     logo: <IconBrandNextjs className="size-5" />,
+//   },
+//   {
+//     title: "Tailwind CSS",
+//     logo: <IconBrandTailwind className="size-5" />,
+//   },
+//   {
+//     title: "Vue",
+//     logo: <IconBrandVue className="size-5" />,
+//   },
+// ];
 
 const cards = [
   // <ProjectCard
@@ -37,6 +38,7 @@ const cards = [
   //   techs={<Tech technologies={project1} />}
   // />,
   <ProjectCard
+    key={1}
     link="/"
     imglink="/loader.gif"
     title="No projects yet x_x"

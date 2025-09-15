@@ -1,16 +1,12 @@
 import React from "react";
 import Card from "../card";
 import Image from "next/image";
-import { ReactNode } from "react";
-import {
-  AppIcon,
-  AppleWatchMenu,
-  IconPlaceholder,
-} from "../../components/tech-grid";
+import { AppleWatchMenu, IconPlaceholder } from "../../components/tech-grid";
+import { v4 as uuidv4 } from "uuid";
 
 export default function TechStack() {
   const myIcons = [
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/mongo.png"}
@@ -19,7 +15,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/local.png"}
@@ -28,7 +24,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/tanstack.png"}
@@ -37,7 +33,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/scss.png"}
@@ -46,7 +42,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/css.png"}
@@ -55,7 +51,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/spline.png"}
@@ -64,7 +60,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/framer.png"}
@@ -73,7 +69,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/figma.png"}
@@ -82,7 +78,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/express.png"}
@@ -91,7 +87,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/node.png"}
@@ -100,7 +96,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/redux.png"}
@@ -109,7 +105,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/motion.png"}
@@ -118,7 +114,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         className="select-none"
         draggable={false}
@@ -128,7 +124,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/shadcn.png"}
@@ -137,7 +133,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/next.png"}
@@ -146,7 +142,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/react.png"}
@@ -155,7 +151,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/postman.png"}
@@ -164,7 +160,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/github.png"}
@@ -173,7 +169,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/git.png"}
@@ -182,7 +178,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/yt.png"}
@@ -191,7 +187,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/dribble.png"}
@@ -200,7 +196,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/pinterest.png"}
@@ -209,7 +205,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/illustrator.png"}
@@ -218,7 +214,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/photoshop.png"}
@@ -227,7 +223,7 @@ export default function TechStack() {
         height={40}
       ></Image>
     </IconPlaceholder>,
-    <IconPlaceholder>
+    <IconPlaceholder key={uuidv4()}>
       <Image
         draggable={false}
         src={"/wordpress.png"}
@@ -242,7 +238,6 @@ export default function TechStack() {
       <Card title="app" className="flex flex-col">
         <h1 className="font-h text-foreground text-3xl">Tech Stack</h1>
         <div className="mx-auto">
-          {/* @ts-ignore */}
           <AppleWatchMenu icons={myIcons} />
         </div>
         <div>

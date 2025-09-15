@@ -24,6 +24,7 @@ const project2 = [
 
 const cards = [
   <ProjectCard
+    key={1}
     link="https://vibe-hive.framer.website/"
     imglink="https://drive.google.com/uc?export=view&id=1VIwirfPmi9FOfkhhq1vLVo9QqBok_QUd"
     title="VibeHive eCommerce App"
@@ -31,6 +32,7 @@ const cards = [
     techs={<Tech technologies={project1} />}
   />,
   <ProjectCard
+    key={2}
     link="https://discord-redesign.framer.website/"
     imglink="https://drive.google.com/uc?export=view&id=1jNk2j-uePdJATkcXBDKNlY-pAal2U4Ll"
     title="Discord UI/UX Redesign"
@@ -38,6 +40,7 @@ const cards = [
     techs={<Tech technologies={project1} />}
   />,
   <ProjectCard
+    key={3}
     link="https://www.figma.com/proto/dRhJzDIazO17f4VdPioxRd/fintech-dashboard?page-id=4%3A3620&node-id=4-3621&p=f&viewport=307%2C106%2C0.12&t=Kyo8Cps7AyxJYZmH-1&scaling=scale-down&content-scaling=fixed"
     imglink="https://drive.google.com/uc?export=view&id=1SwkE05MOHkPZKE8CTZOMANv6cu1ng6SP"
     title="Fin Board Dashboard"
