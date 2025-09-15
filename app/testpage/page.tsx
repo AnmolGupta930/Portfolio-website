@@ -1,7 +1,7 @@
-// "use client";
+"use client";
 // import React from "react";
 // import Card from "../components/card";
-// import cn from "../lib/utils/cn";
+import cn from "../lib/utils/cn";
 // import MainCard from "../components/grid-items/main_card";
 // import TechStack from "../components/grid-items/tech_stack";
 // import Music from "../components/grid-items/music";
@@ -19,7 +19,7 @@
 // } from "@tabler/icons-react";
 // import Tech from "../components/tech";
 
-// function page() {
+function page() {
 //   const project1 = [
 //     {
 //       title: "React",
@@ -61,16 +61,16 @@
 //     />,
 //   ];
 
-//   return (
-//     <div
-//       className={cn(
-//         "flex min-h-screen items-center justify-center",
-//         "my-bg-pattern bg-background",
-//       )}
-//     >
-//       <div className="box size-[300px]"></div>
-//     </div>
-//   );
-// }
+  return (
+    <div
+      className={cn(
+        "flex min-h-screen items-center justify-center",
+        "my-bg-pattern bg-background",
+      )}
+    >
+      {/* <div className="box size-[300px]"></div> */}
+    </div>
+  );
+}
 
-// export default page;
+export default page;
