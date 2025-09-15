@@ -41,7 +41,7 @@ export default function Card({
         </div>
         <div
           className={cn(
-            "bg-card/50 text-foreground flex-auto rounded-br-2xl rounded-bl-2xl px-2 pt-2 pb-4 backdrop-blur-[4px]",
+            "bg-card/50 text-foreground flex-auto rounded-br-2xl rounded-bl-2xl px-2 pt-2 pb-4 shadow-[inset_-1px_-5px_10px]/20 backdrop-blur-[4px]",
             className,
           )}
         >
