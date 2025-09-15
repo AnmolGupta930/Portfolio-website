@@ -16,7 +16,7 @@ export default function Card({
     <div
       className={cn(
         "relative flex h-auto rounded-2xl",
-        "border-foreground/50 border bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-foreground)]/50",
+        "border-foreground/50 bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-foreground)]/50",
       )}
     >
       <motion.div
@@ -27,11 +27,11 @@ export default function Card({
           bounceDamping: 15,
         }}
         className={cn(
-          "border-foreground h-auto w-full flex-col rounded-2xl border-[2px]",
+          "border-foreground/85 h-auto w-full flex-col rounded-2xl border-[2px]",
           "shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(27,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]",
         )}
       >
-        <div className="border-foreground bg-card flex min-h-10 cursor-grab items-center justify-between rounded-tl-2xl rounded-tr-2xl border-b-2 px-2">
+        <div className="border-foreground/85 bg-card flex min-h-10 cursor-grab items-center justify-between rounded-tl-2xl rounded-tr-2xl border-b-2 px-2">
           <div className="flex">
             <IconCircleFilled className="size-4 text-[#e2442f]" />
             <IconCircleFilled className="size-4 text-[#ffc901]" />
