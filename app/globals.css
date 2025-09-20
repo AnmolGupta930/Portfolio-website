@@ -32,4 +32,6 @@ background-image: radial-gradient(circle at center center, #f0efed), repeating-r
 background-blend-mode: multiply;
 }
 
-
+body::-webkit-scrollbar {
+  display: none;
+}
