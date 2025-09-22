@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import { IBM_Plex_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const primary = IBM_Plex_Sans({
@@ -75,6 +76,7 @@ export default function RootLayout({
       <body className={`${primary.variable} ${secondary.variable} antialiased`}>
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
