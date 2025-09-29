@@ -35,11 +35,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Anmol. | Design Engineer",
     description: "Frontend with foresight—designing today for tomorrow's web.",
-    url: "https://portfolio-website-anmol-gupta.vercel.app/",
+    url: "https://www.anmol.digital/",
     siteName: "Anmol Gupta Portfolio",
     images: [
       {
-        url: "https://portfolio-website-anmol-gupta.vercel.app/og-img.png", //image
+        url: "https://www.anmol.digital/og-img.png", //image
         width: 1200,
         height: 630,
         alt: "Anmol Gupta Portfolio",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: "Anmol. | Design Engineer",
     description: "Frontend with foresight—designing today for tomorrow's web.",
     creator: "@anmol__003",
-    images: ["https://portfolio-website-anmol-gupta.vercel.app/og-img.png"], //image
+    images: ["https://www.anmol.digital/og-img.png"], //image
   },
   icons: {
     icon: "/favicon.ico",
