@@ -20,13 +20,15 @@ export default function MainCard() {
         <div className="flex flex-col gap-8 px-2 pt-2">
           <div className="flex items-start justify-between">
             <div className="flex gap-4">
-              <Image
-                className="border-foreground rounded-full border-[2px]"
+              <div className="relative"><Image
+                className="rounded-full"
                 src={"/profile.jpg"}
                 alt="image"
                 width={100}
                 height={100}
               ></Image>
+              <div className="pointer-events-none absolute inset-0 rounded-full ring-2 ring-foreground/10" />
+              </div>
 
               <div className="mb-2 flex flex-col justify-end">
                 <h1 className="font-h text-foreground text-3xl">Anmol.</h1>
