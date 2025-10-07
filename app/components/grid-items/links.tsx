@@ -22,7 +22,7 @@ export default function Links() {
       id: 1,
       icon: <IconFileCvFilled />,
       title: "My resume",
-      link: "",
+      link: "https://drive.google.com/file/d/1YX64OWIHBV5Sm4Q4RLAaB5XTiyTTFhKU/view?usp=sharing",
     },
     {
       id: 2,
